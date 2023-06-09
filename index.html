@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bikezone</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+</head>
+<body>
+	<section class="front">
+		<nav>
+			<a href="index.html"><img src="images/logo.png"></a>
+			<div class="main" id="navLinks">
+				<i class="fa fa-times" onclick="hideMenu()"></i>
+				<ul>
+					<li class="active"><a href="index.html">Home</a></li>
+					<li><a href="pages/cart.html">Cart</a></li>
+					<li><a href="pages/address.html">Address</a></li>
+					<li><a href="pages/about.html">About</a></li>
+					<li><a href="pages/contact.html">Contact</a></li>
+			 	</ul>
+			</div>
+			<i class="fa fa-bars" onclick="showMenu()"></i>
+		</nav>
+			<main>
+				<div class="container">
+				<h1>Bikezone</h1>
+				<p>Welcome to our online shop!<br>Were all the bike parts you're looking for is in here.</p>
+					<div class="frontimage">
+						<img src="images/logobackground.jfif">
+					</div>
+				</div>
+			</main>
+	</section>
+	<!------products------->
+	<section class="products">
+		<h1>Bike Parts</h1>
+		<div class="row">
+			<div class="parts">
+				<img src="images/bkp44.gif">
+				<a href="pages/gears.html">
+					<div class="layer">
+						<h3>Sprocket</h3>
+					</div>
+				</a>
+			</div>
+			<div class="parts">
+				<img src="images/bkp17.jpg">
+				<a href="pages/body.html">
+					<div class="layer">
+						<h3>Bike Body</h3>
+					</div>
+				</a>
+			</div>
+			<div class="parts">
+				<img src="images/tools.jpg">
+				<a href="pages/others.html">
+					<div class="layer">
+						<h3>Others</h3>
+					</div>
+				</a>
+			</div>
+		</div>	
+	</section>
+	<section class="terms">
+		<div>
+			<a href="pages/termsandservice.html" class="hero-btn">Terms and Condition</a>
+		</div>
+	</section>
+
+	<!-----JavaScript------>
+	<script type="text/javascript">
+		
+		var navLinks = document.getElementById('navLinks');
+
+		function showMenu(){
+			navLinks.style.right = "0"
+		}
+
+		function hideMenu(){
+			navLinks.style.right = "-200px"
+		}
+
+	</script>
+	
+</body>
+</html>

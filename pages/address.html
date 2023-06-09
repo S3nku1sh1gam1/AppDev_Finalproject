@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bikezone</title>
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+</head>
+<body>
+	<section class="back">
+		<nav>
+			<a href="index.html"><img src="../images/logo.png"></a>
+			<div class="main" id="navLinks">
+				<i class="fa fa-times" onclick="hideMenu()"></i>
+				<ul>
+					<li class="active"><a href="../index.html">Home</a></li>
+					<li><a href="../pages/cart">Cart</a></li>
+					<li><a href="../pages/index.html">Address</a></li>
+					<li><a href="../pages/about.html">About</a></li>
+					<li><a href="../pages/contact.html">Contact</a></li>
+			 	</ul>
+			</div>
+			<i class="fa fa-bars" onclick="showMenu()"></i>
+		</nav>
+		<div>
+			<h1>Address</h1>
+			<p>M. Quezon St. Isok 1, Boac, Marinduque<br>Marinduque branch<br>Open: 8am to 5:30pm</p>
+			<img src="../images/address.jpg">
+		</div>
+		<div>
+			<h1>Other Branches</h1>
+			<p>Mile's Bike<br>Address: Mogpog,Marinduque<br>open:7:30-6pm<br>Contact: 0999-419-3722</p>
+			<p>Bikexzone<br>Address: WJV3+3W9, Aquamarine, Lucena, Quezon<br>Open: 8am to 5pm</p>
+			<p>Bike Zone Mandauyong<br>Address: BRGY, Mandaluyong, Metro Manila<br>Open: 8am to 6pm<br>Contact: 0967-413-9087</p>
+			<p>Bike zone<br>Address: F. imentel Ave, Daet, Camarines Norte</p>
+		</div>
+	</section>
+	<section class="terms">
+		<div>
+			<a href="pages/termsandservice.html" class="hero-btn">Terms and Condition</a>
+		</div>
+	</section>
+	<!-----JavaScript------>
+	<script type="text/javascript">
+		
+		var navLinks = document.getElementById('navLinks');
+
+		function showMenu(){
+			navLinks.style.right = "0"
+		}
+
+		function hideMenu(){
+			navLinks.style.right = "-200px"
+		}
+
+	</script>
+	
+</body>
+</html>

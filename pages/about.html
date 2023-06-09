@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bikezone</title>
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+</head>
+<body>
+	<section class="back">
+		<nav>
+			<a href="index.html"><img src="../images/logo.png"></a>
+			<div class="main" id="navLinks">
+				<i class="fa fa-times" onclick="hideMenu()"></i>
+				<ul>
+					<li class="active"><a href="../index.html">Home</a></li>
+					<li><a href="../pages/cart.html">Cart</a></li>
+					<li><a href="../pages/address.html">Address</a></li>
+					<li><a href="../pages/index.html">About</a></li>
+					<li><a href="../pages/contact.html">Contact</a></li>
+			 	</ul>
+			</div>
+			<i class="fa fa-bars" onclick="showMenu()"></i>
+	 	</nav>
+	</section>
+	<section class="about">
+	<div class="about-main">
+		<img src="../images/group.png">
+		<div class="about-text">
+			<h1>About Us</h1>
+			<h5>Web Developers<span> & Designer<span></h5>
+			<p>(John Lander Pascual, Mark Angelo Lazo, James Tan, Airesh	Adonis, John Christian Laririt)</p>
+			<br>
+			<p>Beyond bicycles, a local bicycle shop may offer clothing and other accessories, spare and replacement parts, tools, and a variety of services. Services may include expert fitting and custom bike building or ordering, maintenance and repairs from experienced bicycle mechanics, and organized group rides and classes.</p>
+			<a href="../index.html" class="hero-btn">Home</a>
+		</div>		
+	</div>
+</section>
+	<section class="terms">
+		<div>
+			<a href="pages/termsandservice.html" class="hero-btn">Terms and Condition</a>
+		</div>
+	</section>
+	<!-----JavaScript------>
+	<script type="text/javascript">
+		
+		var navLinks = document.getElementById('navLinks');
+
+		function showMenu(){
+			navLinks.style.right = "0"
+		}
+
+		function hideMenu(){
+			navLinks.style.right = "-200px"
+		}
+
+	</script>
+	
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bikezone</title>
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+</head>
+<body>
+	<section class="back">
+		<nav>
+			<a href="index.html"><img src="../images/logo.png"></a>
+			<div class="main" id="navLinks">
+				<i class="fa fa-times" onclick="hideMenu()"></i>
+				<ul>
+					<li class="active"><a href="../index.html">Home</a></li>
+					<li><a href="../pages/cart.html">Cart</a></li>
+					<li><a href="../pages/address.html">Address</a></li>
+					<li><a href="../pages/about.html">About</a></li>
+					<li><a href="../pages/contact.html">Contact</a></li>
+			 	</ul>
+			</div>
+			<i class="fa fa-bars" onclick="showMenu()"></i>
+	 	</nav>
+	 	<div>
+	 		<img src="../images/tac.png">
+	 		<h1>What if we Didn't Follow the Terms and condition?</h1>
+				<p>if a user does not follow the terms and conditions of a website or service, they may face consequences such as account suspension, termination, or legal action. The severity of the consequences depends on the severity of the violation. It is important to carefully read and understand the terms and conditions before using a website or service to avoid any breaches.</p>
+				<br>
+				<h1>why should we follow the terms and condition?</h1>
+				<p>There are several reasons why it is important to follow the terms and conditions of a website or service, including:
+				<br>
+				<br>1. Legal implications: By using a website or service, you are entering into a legal agreement with the company or platform. Failure to follow the terms and conditions may result in a breach of contract, which could have legal consequences.
+				<br>
+				<br>2. Protection of personal information: Many terms and conditions outline how the website or service collects, uses, and protects user data. Following these guidelines can help protect your personal information from being misused or exploited.
+				<br>
+				<br>3. Ensuring a positive user experience: Terms and conditions often include rules and guidelines that are intended to maintain a positive user experience on the platform. By following these rules, you can help ensure that the platform remains a safe and pleasant place to use.
+				<br>
+				<br>In short, following the terms and conditions is important in order to protect your legal rights, personal information, and overall user experience.</p>
+				<br>
+		</div>
+	</section>
+	<!-----JavaScript------>
+	<script type="text/javascript">
+		
+		var navLinks = document.getElementById('navLinks');
+
+		function showMenu(){
+			navLinks.style.right = "0"
+		}
+
+		function hideMenu(){
+			navLinks.style.right = "-200px"
+		}
+
+	</script>
+	
+</body>
+</html>
